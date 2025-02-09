@@ -28,6 +28,7 @@ export class AuthService {
       return null;
     }
     const { password: _, ...result } = user;
+
     return result;
   }
 

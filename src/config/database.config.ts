@@ -10,4 +10,5 @@ export default registerAs<TypeOrmModuleOptions>('database', () => ({
   database: process.env.DB_NAME,
   synchronize: true,
   autoLoadEntities: true,
+  ssl: process.env.DB_SSL === 'true',
 }));
