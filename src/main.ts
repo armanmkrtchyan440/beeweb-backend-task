@@ -10,7 +10,6 @@ async function bootstrap() {
     origin: '*', // You can replace '*' with specific domains for more security
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: 'Content-Type, Accept, Authorization',
-    credentials: true,
   });
 
   app.useGlobalPipes(new ValidationPipe());
